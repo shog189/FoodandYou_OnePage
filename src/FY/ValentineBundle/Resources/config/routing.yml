@@ -1,0 +1,3 @@
+fy_valentine_homepage:
+    path:     /
+    defaults: { _controller: FYValentineBundle:Default:index }
