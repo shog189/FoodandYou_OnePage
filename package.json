@@ -1,0 +1,30 @@
+{
+  "name": "foodandyou_onepage",
+  "version": "1.0.0",
+  "description": "one page for valentine's day",
+  "main": "gulpfile.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^2.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/christianJCK/FoodandYou_OnePage.git"
+  },
+  "author": "christian Jecko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/christianJCK/FoodandYou_OnePage/issues"
+  },
+  "homepage": "https://github.com/christianJCK/FoodandYou_OnePage#readme"
+}
