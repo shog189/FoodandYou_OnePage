@@ -20,13 +20,33 @@ var paths = {
         js: 'web/assets/js',
         css: 'web/assets/css',
         img: 'web/assets/img'
-    }
+    },
+    vendorJs: [
+        'web/vendors/components/materialize/dist/js/materialize.js'
+    ],
+    vendorCss: [
+        'web/vendors/components/materialize/dist/css/materialize.min.css'
+    ]
 };
 
 
-gulp.task('default', ['uglify', 'sass', 'imagemin'], function(){
+gulp.task('default', ['uglify', 'sass', 'imagemin', 'vendors'], function(){
 
 });
+
+gulp.task('vendor-js', function () {
+   return gulp.src(paths.vendorJs)
+       .pipe(uglify())
+       .pipe(concat('vendor.js'))
+       .pipe(gulp.dest(paths.dest.js))
+});
+
+gulp.task('vendor-css', function () {
+   return gulp.src(paths.vendorCss)
+       .pipe(concat('vendor.css'))
+       .pipe(gulp.dest(paths.dest.css))
+});
+
 
 gulp.task('uglify', function () {
     return gulp.src(paths.js)
@@ -48,6 +68,9 @@ gulp.task('imagemin', function () {
         .pipe(gulp.dest(paths.dest.img))
 });
 
+gulp.task('vendors', ['vendor-js', 'vendor-css'], function () {
+
+});
 
 
 gulp.task('watch', function () {
