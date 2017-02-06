@@ -19,14 +19,20 @@ var paths = {
     dest: {
         js: 'web/assets/js',
         css: 'web/assets/css',
-        img: 'web/assets/img'
+        img: 'web/assets/img',
+        font: 'web/assets/fonts'
     },
     vendorJs: [
-        'web/vendors/components/materialize/dist/js/materialize.js'
+        'web/vendors/components/jquery/dist/jquery.min.js',
+        'web/vendors/components/materialize/dist/js/materialize.min.js'
     ],
     vendorCss: [
         'web/vendors/components/materialize/dist/css/materialize.min.css'
+    ],
+    font: [
+        'web/vendors/components/materialize/fonts/**/*'
     ]
+
 };
 
 
@@ -64,7 +70,6 @@ gulp.task('sass', function(){
 
 gulp.task('imagemin', function () {
     return gulp.src(paths.img)
-        .pipe(imagemin())
         .pipe(gulp.dest(paths.dest.img))
 });
 
@@ -75,4 +80,9 @@ gulp.task('vendors', ['vendor-js', 'vendor-css'], function () {
 
 gulp.task('watch', function () {
    gulp.watch([paths.sass, paths.js], ['sass', 'uglify'])
+});
+
+gulp.task('font', function () {
+    return gulp.src(paths.font)
+        .pipe(gulp.dest(paths.dest.font))
 });

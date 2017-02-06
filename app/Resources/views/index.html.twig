@@ -1,7 +1,240 @@
-{% extends 'FYValentineBundle::layout.html.twig' %}
+{% extends 'layout.html.twig' %}
 
 {% block content %}
+    {# Starting block #}
+    <div class="container" id="top-page">
+        <div class="row">
+            <div class="col m8 offset-m2 valign-wrapper" id="intro-text">
+                <div class="valign">
+                    <h1 class="">En plein coeur de la cuisine</h1>
+                    <h3 class="">Un chef vous invite dans les coulisses de son restaurant et partage avec vous son savoir faire </h3>
+                </div>
+            </div>
+            <div class="col m6 offset-m3 col s10 offset-s1" id="button-bloc">
+                <a href="#baptism" class="waves-effect waves-light btn-large">en savoir plus</a>
+                <a class="waves-effect waves-light btn-large" id="video-btn">voir la video</a>
+            </div>
+        </div>
+    </div>
 
-<h1> HELLO GUYS !</h1>
+    {# New concept presentation #}
+    <div class="container" id="starting">
+        <div class="row">
+            <div class="col m12 block-title">
+                <h1 class="center-align blue-title">nouvelle année <br> nouveau concept</h1>
+            </div>
+            <div class="col m6 col s12" id="text-newConcept">
+                <p>L’année 2017 marque le lancement pour Food&You d’une nouvelle offre : le Baptême de Chef.
+                    Notre idée: vous faire vivre la vie d’un vrai chef pendant un vrai service avec des vrais clients !
+                    Il s’agit d’une immersion totale dans les cuisines d’un restaurant, en tête à tête avec le chef.
+                    Le baptême de chef permet de comprendre la mise en place d’un service, de partager un repas
+                    avec l’équipe, puis de vivre le coup de feu aux premières loges. Cerise sur le gâteau: vous pourrez
+                    partager l’expérience avec des amis en salle en dégustant le dessert avec eux.
+                </p>
+                <p>Pour vous permettre de vous inscrire et de vivre cette aventure extraordinaire, notre site internet
+                    fait peau neuve : nous avons donc mis en place une version de transition qui vous permet de nous contacter
+                    pour vous inscrire à un Baptême de Chef ou pour offrir un bon cadeau. Nous en profitons aussi pour référencer
+                    les meilleurs restaurants de plusieurs villes: Lyon, Paris, Marseille, Bordeaux et Toulouse. Des chefs passionnés,
+                    pédagogues, qui ont envie de vous ouvrir les portes de leur quotidien et de vous montrer leur amour des bons produits
+                    et de la bonne cuisine !
+                </p>
+            </div>
+            <div class="col m6 col s12 valign-wrapper">
+                <div class="valign">
+                    <img src="{{ asset('assets/img/new-concept.jpg') }}">
+                </div>
+            </div>
+        </div>
+    </div>
 
+    {# Chef Baptism details #}
+    <div class="container" id="baptism">
+        <div class="row">
+            <div class="col m12 block-title">
+                <h1 class="center-align">bapteme de chef</h1>
+            </div>
+            <div class="col s12 m6">
+                <img class="center-align" src="{{ asset('assets/img/baptism.jpg') }}">
+            </div>
+            <div class="col s12 m6">
+                <div class="card-panel teal" id="white-card">
+                    <p class="white-text">
+                        Plutôt service du midi ou du soir ? C’est vous qui décidez !
+                        Choisissez dans notre liste de restaurants partenaires  celui qui vos correspond le mieux.
+                        Puis embarquez dans une aventure inédite : préparation d’un service, échanges avec un chef
+                        et conseils pratiques, un vrai spectacle vous attend !
+                    </p>
+                </div>
+            </div>
+            <div class="col m12 small-title">
+                <h4 class="center-align">le déroulé</h4>
+                <p class="center-align" id="baptisme-time">durée: 5h</p>
+            </div>
+            <div class="col m10 offset-m1">
+                <div id="accordion-block">
+                    <ul class="collapsible" data-collapsible="accordion">
+                        <li>
+                            <div class="collapsible-header active" id="color1">
+                                <img src="{{ asset('assets/img/diving.png') }}" class="accordion-icon">
+                                <p class="center-align">Immersion</p>
+                            </div>
+                            <div class="collapsible-body">
+                                <span>Arrivée 9h30 ou 18h selon le service choisi</span><br><br>
+                                <span>Visite du restaurant et des cuisines</span><br><br>
+                                <span>Présentation de l’équipe</span><br><br>
+                                <span>Présentation du menu autour d’un café ou thé</span><br><br>
+                                <span>Phase d’échange avec le chef, la parole est à vous !</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header" id="color2">
+                                <img src="{{ asset('assets/img/dish.png') }}" class="accordion-icon float-right">
+                                <p class="center-align">Mise en place</p>
+                            </div>
+                            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header" id="color3">
+                                <img src="{{ asset('assets/img/recipe.png') }}" class="accordion-icon">
+                                <p class="center-align">Repas de service</p>
+                            </div>
+                            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header" id="color4">
+                                <img src="{{ asset('assets/img/flame.png') }}" class="accordion-icon float-right">
+                                <p class="center-align">Coup de feu</p>
+                            </div>
+                            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header" id="color5">
+                                <img src="{{ asset('assets/img/plane.png') }}" class="accordion-icon">
+                                <p class="center-align">atterrissage</p>
+                            </div>
+                            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col m12 center-align">
+                <a class="waves-effect waves-light btn-large">se faire baptiser</a>
+            </div>
+        </div>
+    </div>
+
+    {# Gift card overview #}
+    <div class="container" id="gift-block">
+        <div class="row">
+            <div class="col m12 block-title">
+                <h1 class="center-align blue-title">bons cadeaux</h1>
+                <h5 class="center-align" >offrir un baptême de chef</h5>
+            </div>
+            <div class="col m12 center-align">
+                <img src="{{ asset('assets/img/gift.png') }}">
+            </div>
+            <div class="col m12 center-align">
+                <p>Un présent inédit pour un proche</p>
+            </div>
+            <div class="col m12 center-align">
+                <a class="waves-effect waves-light btn-large">offrir un bon cadeau</a>
+            </div>
+        </div>
+    </div>
+
+    {# Brand Presentation #}
+    <div class="container" id="brand-presentation">
+        <div class="col m12 block-title">
+            <h1 class="center-align">qui sommes-nous ?</h1>
+        </div>
+        <div class="col s12 m6">
+            <img src="{{ asset('assets/img/karen-jeanChristophe.jpg') }}">
+        </div>
+        <div class="col s12 m6">
+            <p> Karen, fascinée par les coulisses des cuisines de restaurant, rêvait de s’immerger aux côtés
+                d’un chef pour vivre un vrai service, (et pas que devant sa télé) ! En 2015, elle constate qu’au delà
+                des simples cours de cuisine collectifs ou particuliers, il n’est pas possible de vivre une réelle
+                expérience de chef « dans la vraie vie ». Jean Christophe, fondateur d’une entreprise de cours de cuisine,
+                lui aussi passionné de cuisine rejoint l’aventure en 2016. Depuis, plus d’une centaine de personnes sont
+                "passées à la casserole", et ce n’est qu’un début !
+            </p>
+        </div>
+        <div class="col s12 m6">
+            <p> Food and You est une une nouvelle communauté de foodies avec des valeurs fortes : Le partage et la
+                transmission, la passion de la cuisine, la qualité et la transparence des produits. Ce concept repose
+                aussi sur une grande ouverture d’esprit de la part des restaurants et des chefs, qui nous ouvrent les
+                portes de leur cuisine…sans eux rien ne serait possible.
+            </p>
+        </div>
+        <div class="col s12 m6">
+            <img src="{{ asset('assets/img/nos-foodys.jpg') }}">
+        </div>
+    </div>
+
+    {# Contact Form #}
+    <div class="container" id="contact-block">
+        <div class="row" id="form-block">
+            <div class="col m12 block-title">
+                <h1 class="center-align">contactez-nous</h1>
+                <p class="center-align"> Avant que notre site commerçant soit mis en ligne vous pouvez commander un baptême de chef
+                    via ce formulaire pour vous ou pour offrir
+                </p>
+            </div>
+            <form class="col m12">
+                <div class="row">
+                    <div class="col m6">
+                        <p>
+                            <input class="with-gap" name="group1" type="radio" id="test1"  />
+                            <label for="test1">vivre un baptême de chef</label>
+                        </p>
+                    </div>
+                    <div class="col m6">
+                        <p>
+                            <input class="with-gap" name="group1" type="radio" id="test2"  />
+                            <label for="test2">offrir un bon cadeau</label>
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input id="last_name" type="text" class="validate" aria-required="true">
+                        <label for="last_name">Nom</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="last_name" type="text" class="validate" aria-required="true">
+                        <label for="last_name">Prénom</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="email" type="email" class="validate" aria-required="true">
+                        <label for="email" data-error="erroné" data-success="valide">Email</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="icon_telephone" type="tel" class="validate" aria-required="true">
+                        <label for="icon_telephone">Téléphone</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="city" type="text" class="validate" aria-required="true">
+                        <label for="city">Ville</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <textarea id="textarea1" class="materialize-textarea"></textarea>
+                        <label for="textarea1">Des précisions? Des questions?</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <button class="btn waves-effect waves-light" type="submit" name="action">envoyer</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
 {% endblock %}
