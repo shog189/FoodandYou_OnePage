@@ -1,0 +1,20 @@
+{
+  "name": "foodandyou_onepage",
+  "description": "one page for valentine's day",
+  "main": "gulpfile.js",
+  "authors": [
+    "christian Jecko"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/christianJCK/FoodandYou_OnePage",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "materialize": "^0.98.0"
+  }
+}
