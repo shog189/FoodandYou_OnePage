@@ -185,6 +185,7 @@
                 </p>
             </div>
             <form class="col m12">
+                {{ form_start(form) }}
                 <div class="row">
                     <div class="col m6">
                         <p>
@@ -200,37 +201,31 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="input-field col s6">
-                        <input id="first_name" type="text" class="validate" aria-required="true">
-                        <label for="first_name">Nom</label>
+                    <div class="input-field col s6 validate" id="first_name" type="text">
+                        {{ form_row(form.firstName) }}
                     </div>
-                    <div class="input-field col s6">
-                        <input id="last_name" type="text" class="validate" aria-required="true">
-                        <label for="last_name">Prénom</label>
+                    <div class="input-field col s6 validate" id="last_name" type="text">
+                        {{ form_row(form.lastName) }}
                     </div>
                 </div>
                 <div class="row">
-                    <div class="input-field col s12">
-                        <input id="email" type="email" class="validate" aria-required="true">
-                        <label for="email" data-error="erroné" data-success="valide">Email</label>
+                    <div class="input-field col s12 validate" id="email" type="email">
+                        {{ form_row(form.authorEmail) }}
                     </div>
                 </div>
                 <div class="row">
-                    <div class="input-field col s12">
-                        <input id="icon_telephone" type="tel" class="validate" aria-required="true">
-                        <label for="icon_telephone">Téléphone</label>
+                    <div class="input-field col s12 validate" id="icon_telephone" type="tel">
+                        {{ form_row(form.authorPhone) }}
                     </div>
                 </div>
                 <div class="row">
-                    <div class="input-field col s12">
-                        <input id="city" type="text" class="validate" aria-required="true">
-                        <label for="city">Ville</label>
+                    <div class="input-field col s12 validate" id="city" type="text">
+                        {{ form_row(form.city) }}
                     </div>
                 </div>
                 <div class="row">
-                    <div class="input-field col s12">
-                        <textarea id="textarea1" class="materialize-textarea"></textarea>
-                        <label for="textarea1">Des précisions? Des questions?</label>
+                    <div class="input-field col s12 materialize-textarea" id="textarea1>
+                        {{ form_row(form.comment) }}
                     </div>
                 </div>
                 <div class="row">
@@ -238,7 +233,20 @@
                         <button class="btn waves-effect waves-light" type="submit" name="action">envoyer</button>
                     </div>
                 </div>
+                {{ form_end(form) }}
             </form>
+
+
+            <div class="col m12">
+                {{ form_start(form) }}
+                <div class="row">
+                    <div class="input-field col s12">
+                        {{ form_row(form.firstName) }}
+                    </div>
+                </div>
+                {{ form_end(form) }}
+            </div>
+
         </div>
     </div>
 {% endblock %}
