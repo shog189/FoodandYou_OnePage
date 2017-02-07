@@ -35,37 +35,43 @@ class FormType extends AbstractType
                     'id' => "test2",
                 )
             ))
-            ->add('firstName', TextType::class, array('label' => 'prénom','required' => true,
+            ->add('firstName', TextType::class, array('label' => 'Prénom',
+                'required' => true,
                 'attr' => array(
                     'class' => 'validate',
                     'id' => 'first_name',
                 )
             ))
-            ->add('lastName', TextType::class, array('required' => true,
+            ->add('lastName', TextType::class, array('label' => 'Nom',
+                'required' => true,
                 'attr' => array(
                     'class' => 'validate',
                     'id' => 'last_name',
                 )
             ))
-            ->add('authorEmail', EmailType::class, array('required' => true,
+            ->add('authorEmail', EmailType::class, array('label' => 'Mail',
+                'required' => true,
                 'attr' => array(
                     'class' => 'validate',
                     'if' => 'email'
                 )
             ))
-            ->add('authorPhone', NumberType::class, array('required' => true,
+            ->add('authorPhone', NumberType::class, array('label' => 'Numéro de téléphone',
+                'required' => true,
                 'attr' => array(
                     'class' => 'validate',
                     'id' => 'icon_telephone',
                 )
             ))
-            ->add('city', TextType::class, array('required' => true,
+            ->add('city', TextType::class, array('label' => 'Ville',
+                'required' => true,
                 'attr' => array(
                     'class' => 'validate',
                     'id' => 'city',
                 )
             ))
-            ->add('comment', TextareaType::class, array('required' => true,
+            ->add('comment', TextareaType::class, array('label' => 'Un petit commentaire ?',
+                'required' => true,
                 'attr' => array(
                     'class' => 'materialize-textarea',
                     'id' => 'textarea1',
