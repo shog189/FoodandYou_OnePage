@@ -13,13 +13,13 @@
 !var/sessions/.gitkeep
 !var/SymfonyRequirements.php
 /vendor/
+/node_modules
 /web/bundles/
 /web/vendors/components
 /web/assets/css
 /web/assets/js
 /web/assets/fonts
 /web/assets/img
-/node_modules/*
 web/dev/img/.DS_Store
 npm-debug.log
 
