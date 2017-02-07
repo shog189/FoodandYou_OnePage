@@ -1,1 +1,1 @@
-$(document).ready(function(){$("body").click(function(){console.log("ok")})});
+$(document).ready(function(){$(".button-collapse").sideNav({menuWidth:300,edge:"left",closeOnClick:!0}),$(document).ready(function(){$(".collapsible").collapsible()})});

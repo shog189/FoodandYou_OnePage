@@ -18,7 +18,7 @@ class ValentineController extends Controller
 
     public function indexAction()
     {
-        return $this->render('FYValentineBundle:Valentine:index.html.twig');
+        return $this->render('index.html.twig');
     }
 
 

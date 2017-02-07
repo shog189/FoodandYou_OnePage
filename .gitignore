@@ -16,8 +16,10 @@
 /node_modules
 /web/bundles/
 /web/vendors/components
-/web/assets
-/npm-debug.log
-/web/dev/img/.DS_Store
-
+/web/assets/css
+/web/assets/js
+/web/assets/fonts
+/web/assets/img
+web/dev/img/.DS_Store
+npm-debug.log
 
