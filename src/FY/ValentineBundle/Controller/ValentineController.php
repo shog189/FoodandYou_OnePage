@@ -11,14 +11,22 @@ namespace FY\ValentineBundle\Controller;
 
 
 
+use FY\ValentineBundle\Form\FormType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\DomCrawler\Form;
+
 
 class ValentineController extends Controller
 {
 
     public function indexAction()
     {
-        return $this->render('index.html.twig');
+
+        $form = $this->createForm(FormType::class);
+
+        return $this->render('index.html.twig', array(
+            'form' => $form->createView(),
+        ));
     }
 
 

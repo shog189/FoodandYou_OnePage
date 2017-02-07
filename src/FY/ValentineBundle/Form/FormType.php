@@ -9,11 +9,12 @@
 namespace FY\ValentineBundle\Form;
 
 
-use Doctrine\DBAL\Types\TextType;
+
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\EmailType;
 use Symfony\Component\Form\Extension\Core\Type\NumberType;
 use Symfony\Component\Form\Extension\Core\Type\TextareaType;
+use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
@@ -23,20 +24,48 @@ class FormType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('firstName', TextType::class)
-            ->add('lastName', TextType::class)
-            ->add('authorEmail', EmailType::class)
-            ->add('authorPhone', NumberType::class)
-            ->add('city', TextType::class)
-            ->add('comment', TextareaType::class)
+            ->add('firstName', TextType::class, array('required' => true,
+                'attr' => array(
+                    'class' => 'validate',
+                    'id' => 'first_name',
+                )
+            ))
+            ->add('lastName', TextType::class, array('required' => true,
+                'attr' => array(
+                    'class' => 'validate',
+                    'id' => 'last_name',
+                )
+            ))
+            ->add('authorEmail', EmailType::class, array('required' => true,
+                'attr' => array(
+                    'class' => 'validate',
+                    'if' => 'email'
+                )
+            ))
+            ->add('authorPhone', NumberType::class, array('required' => true,
+                'attr' => array(
+                    'class' => 'validate',
+                    'id' => 'icon_telephone',
+                )
+            ))
+            ->add('city', TextType::class, array('required' => true,
+                'attr' => array(
+                    'class' => 'validate',
+                    'id' => 'city',
+                )
+            ))
+            ->add('comment', TextareaType::class, array('required' => true,
+                'attr' => array(
+                    'class' => 'materialize-textarea',
+                    'id' => 'textarea1',
+                )
+            ))
             ;
     }
 
     public function configureOptions(OptionsResolver $resolver)
     {
-        $resolver->setDefaults(array(
-            'data_class'    =>  Form::class
-        ));
+
     }
 
 }
