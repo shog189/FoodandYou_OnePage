@@ -13,8 +13,9 @@
 !var/sessions/.gitkeep
 !var/SymfonyRequirements.php
 /vendor/
+/node_modules
 /web/bundles/
 /web/vendors/components
 /web/assets
-/node_modules/node-sass/vendor/
+/npm-debug.log
 
