@@ -2,25 +2,41 @@
 
 body
   font-family: $main-font
+  width: 100%
 .container
-  max-width: 1600px
+  width: 100%
+  padding-top: 3em
+  padding-bottom: 3em
+.row
+  margin: auto
+.background
+  background-size: cover
+  background-position: center
+  color: $light-font
+
+//backgrounds and parallax
+.background
+  background-size: cover
+  background-position: center
+#welcome-background
+  background-image: url("../img/header.jpg")
+#parallax-baptism
+  background-image: url('../img/baptism-paralax.jpg')
+  background-repeat: no-repeat
+  background-attachment: fixed
+#parallax-presentation
+  background-image: url('../img/presentation-paralax.jpg')
+  background-repeat: no-repeat
+  background-attachment: fixed
 
 //top-page block
 #top-page
   color: #ffffff
-  font-family: $main-font
-  margin: 0
-  width: 100vw
   text-align: center
-  margin-top: -3rem
   .row
-    width: 100vw
-    height: 700px
-    background-image: url("../img/header.jpg")
-    background-size: cover
-    background-position: center
+    height: 600px
     #intro-text
-      margin-top: 12rem
+      margin-top: 8rem
     #button-bloc
       margin-top: 4rem
   h1
@@ -30,38 +46,23 @@ body
     font-weight: normal
     font-size: 1.8rem
 
-//baptism block
-
-#baptism
-    background-image: url('../img/baptism-paralax.jpg')
-
-//brand-presentation block
-
-#brand-presentation
-  width: 100vw
-  background-image: url('../img/presentation-paralax.jpg')
+//starting block
+#starting
+  padding-top: 2em
+  padding-bottom: 2em
+  img
+    max-width: 40rem
 
 //image size
 img
   width: 30rem
 
 #gift-block
+  padding-top: 2em
+  padding-bottom: 2em
   img
     width: 20rem
     margin-top: 2rem
-
-//parallax effect
-
-#baptism, #brand-presentation
-  color: $light-font
-  width: 100vw
-  height: 1300px
-  background-size: cover
-  background-position: center
-  background-repeat: no-repeat
-  background-attachment: fixed
-
-
 
 //accordion
 #color1
