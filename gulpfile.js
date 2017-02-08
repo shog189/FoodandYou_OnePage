@@ -14,7 +14,8 @@ var paths = {
     ],
     sass: [
         'web/dev/sass/*',
-        'web/dev/sass/**/*'
+        'web/dev/sass/modules/*',
+        'web/dev/sass/views/*'
     ],
     dest: {
         js: 'web/assets/js',
