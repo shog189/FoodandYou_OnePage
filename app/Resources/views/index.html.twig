@@ -187,17 +187,9 @@
             <form class="col m12">
                 {{ form_start(form) }}
                 <div class="row">
-                    <div class="col m6">
-                        <p>
-                            <input class="with-gap" name="group1" type="radio" id="test1"  />
-                            <label for="test1">vivre un baptême de chef</label>
-                        </p>
-                    </div>
-                    <div class="col m6">
-                        <p>
-                            <input class="with-gap" name="group1" type="radio" id="test2"  />
-                            <label for="test2">offrir un bon cadeau</label>
-                        </p>
+                    <div class="col m12">
+                        <input class="with-gap" type="radio" id="test1">
+                            {{ form_row(form.baptismChoice) }}
                     </div>
                 </div>
                 <div class="row">
@@ -235,18 +227,6 @@
                 </div>
                 {{ form_end(form) }}
             </form>
-
-
-            <div class="col m12">
-                {{ form_start(form) }}
-                <div class="row">
-                    <div class="input-field col s12">
-                        {{ form_row(form.firstName) }}
-                    </div>
-                </div>
-                {{ form_end(form) }}
-            </div>
-
         </div>
     </div>
 {% endblock %}

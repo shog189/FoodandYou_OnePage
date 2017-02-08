@@ -11,6 +11,7 @@ namespace FY\ValentineBundle\Form;
 
 
 use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use Symfony\Component\Form\Extension\Core\Type\EmailType;
 use Symfony\Component\Form\Extension\Core\Type\NumberType;
 use Symfony\Component\Form\Extension\Core\Type\RadioType;
@@ -25,14 +26,16 @@ class FormType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('baptismChoice', RadioType::class, array(
+            ->add('baptismChoice', ChoiceType::class, array(
+                'choices' => array(
+                    'Vivre un baptême de chef' => 'baptism',
+                    'Offrir un bon cadeau' => 'gift'
+                ),
+                'expanded' => true,
+                'required' => true,
+                'label' => '',
                 'attr' => array(
-                    'id' => "test1",
-                )
-            ))
-            ->add('giftChoice', RadioType::class, array(
-                'attr' => array(
-                    'id' => "test2",
+                    'id' => "test1"
                 )
             ))
             ->add('firstName', TextType::class, array('label' => 'Prénom',
@@ -49,7 +52,7 @@ class FormType extends AbstractType
                     'id' => 'last_name',
                 )
             ))
-            ->add('authorEmail', EmailType::class, array('label' => 'Mail',
+            ->add('authorEmail', EmailType::class, array('label' => 'Adresse mail',
                 'required' => true,
                 'attr' => array(
                     'class' => 'validate',
