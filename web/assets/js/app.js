@@ -1,1 +1,1 @@
-$(document).ready(function(){$(".button-collapse").sideNav({menuWidth:300,edge:"left",closeOnClick:!0}),$(document).ready(function(){$(".collapsible").collapsible()})});
+$(document).ready(function(){$(".button-collapse").sideNav({menuWidth:300,edge:"left",closeOnClick:!0}),$(document).ready(function(){$(".collapsible").collapsible()}),$(document).on("click","[data-lightbox]",lity)});
