@@ -33,7 +33,7 @@ class FormType extends AbstractType
                 ),
                 'expanded' => true,
                 'required' => true,
-                'label' => '',
+                'label' => 'Que souhaitez-vous ?',
                 'attr' => array(
                     'id' => "test1"
                 )
