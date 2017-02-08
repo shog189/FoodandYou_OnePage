@@ -1,3 +1,5 @@
+@import url('/_colors.sass')
+
 footer
   background-color: $header-color
   color: $light-font
@@ -9,16 +11,20 @@ footer
       width: 2.5rem
     a
       color: $light-font
+      margin: 0.5em 0
     li
       text-decoration: none
       text-transform: uppercase
     #footer-menu
       margin-top: 2rem
+      text-align: center
     #footer-socialBlock
       margin-top: 3rem
+      padding-left: 7%
       #social-bar-footer
         display: inline-flex
-        float: right
+        max-width: 30vw
+        margin-right: auto
         li
          margin-right: 1em
     #footer-logo
@@ -29,3 +35,6 @@ footer
       img
         width: 6rem
 
+@media(max-width: 766px) //mobile
+    #footer-socialBlock
+        padding-left: 37%

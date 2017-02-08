@@ -2,9 +2,7 @@
 
 body
   font-family: $main-font
-  width: 100%
 .container
-  width: 100%
   padding-top: 3em
   padding-bottom: 3em
 .row
@@ -13,6 +11,8 @@ body
   background-size: cover
   background-position: center
   color: $light-font
+p
+  text-align: justify
 
 //backgrounds and parallax
 .background
@@ -21,13 +21,9 @@ body
 #welcome-background
   background-image: url("../img/header.jpg")
 #parallax-baptism
-  background-image: url('../img/baptism-paralax.jpg')
-  background-repeat: no-repeat
-  background-attachment: fixed
+  background: url('../img/baptism-paralax.jpg') no-repeat fixed
 #parallax-presentation
-  background-image: url('../img/presentation-paralax.jpg')
-  background-repeat: no-repeat
-  background-attachment: fixed
+  background: url('../img/presentation-paralax.jpg') no-repeat fixed
 
 //top-page block
 #top-page
@@ -50,12 +46,12 @@ body
 #starting
   padding-top: 2em
   padding-bottom: 2em
-  img
-    max-width: 40rem
+  #image-position
+    margin-top: 10%
 
 //image size
 img
-  width: 30rem
+  width: 100%
 
 #gift-block
   padding-top: 2em
@@ -63,6 +59,18 @@ img
   img
     width: 20rem
     margin-top: 2rem
+  p
+    text-align: center
+
+//baptism block
+#baptism
+  .block-title
+    margin-bottom: 3em
+  .card
+    color: black
+    text-align: center
+    width: 60%
+    margin: auto
 
 //accordion
 #color1
@@ -75,7 +83,6 @@ img
   background-color: $accordeon4
 #color5
   background-color: $accordeon5
-
 #accordion-block
   text-align: center
   li
@@ -101,6 +108,32 @@ img
   width: 3rem
   float: left
   z-index: 1
-
 .float-right
   float: right
+
+//brand-presentation
+#brand-presentation
+  font-size: large
+  .about-us
+    margin: 4em 0
+
+//contact block
+#form-block
+  width: 88%
+  margin: 0 auto
+  .block-title
+    p
+      font-weight: bold
+      font-size: 1.3rem
+      padding-left: 7em
+      padding-right: 7em
+  form
+    margin-top: 2em
+  .radio-buttons
+    margin-bottom: 2em
+    #radio-button1
+      text-align: right
+  .input-changes
+    input, textarea
+      border-bottom: 1px solid #00939a
+      height: 3rem
