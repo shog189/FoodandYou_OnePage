@@ -1,0 +1,39 @@
+@import 'colors'
+
+header
+  height: 7rem
+  nav
+    height: 7rem
+    text-transform: uppercase
+    .nav-wrapper
+      height: 7rem
+      background-color: $header-color
+      #icon-menu
+        width: 1.3rem
+      img
+        width: 6.5rem
+        margin-top: 1rem
+      span
+        font-style: normal
+        font-size: 1.5rem
+      #social-bar-header
+        margin-right: 1.7rem
+        margin-top: 0.5rem
+        a
+          height: 4rem
+        img
+          width: 1.8rem
+    .side-nav
+      background-color: $bg-menu-desktop
+      a
+        margin-top: 2rem
+        font-weight: 600
+      #first-link
+        margin-top: 10rem
+      .social-icons
+        display: none
+
+@media only screen and (min-width: 601px)
+  nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i
+    display: inline-block
+

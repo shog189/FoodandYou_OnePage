@@ -1,0 +1,146 @@
+@import "imports"
+
+body
+  font-family: $main-font
+.container
+  padding-top: 3em
+  padding-bottom: 3em
+.row
+  margin: auto
+.background
+  background-size: cover
+  background-position: center
+  color: $light-font
+p
+  text-align: justify
+
+//backgrounds and parallax
+.background
+  background-size: cover
+  background-position: center
+#welcome-background
+  background-image: url("../img/header.jpg")
+#parallax-baptism
+  background: url('../img/baptism-paralax.jpg') fixed
+#parallax-presentation
+  background: url('../img/presentation-paralax.jpg') fixed
+
+//top-page block
+#top-page
+  color: #ffffff
+  text-align: center
+  .row
+    height: 600px
+    #intro-text
+      margin-top: 8rem
+      width: 100%
+    #button-bloc
+      margin-top: 4rem
+  h1
+    font-weight: bold
+    font-size: 3.5rem
+  h3
+    font-weight: normal
+    font-size: 1.8rem
+
+//starting block
+#starting
+  padding-top: 2em
+  padding-bottom: 2em
+  #image-position
+    margin-top: 10%
+
+//image size
+img
+  width: 100%
+
+#gift-block
+  padding-top: 2em
+  padding-bottom: 2em
+  img
+    width: 20rem
+    margin-top: 2rem
+  p
+    text-align: center
+
+//baptism block
+#baptism
+  .block-title
+    margin-bottom: 3em
+  .card
+    color: black
+    text-align: center
+    width: 60%
+    margin: auto
+
+//accordion
+#color1
+  background-color: $accordeon1
+#color2
+  background-color: $accordeon2
+#color3
+  background-color: $accordeon3
+#color4
+  background-color: $accordeon4
+#color5
+  background-color: $accordeon5
+#accordion-block
+  text-align: center
+  li
+    border: none
+    background-color: #ffffff
+    color: #000000
+  span
+    margin-top: 2em
+    margin-bottom: 2em
+.collapsible-header
+  border: none
+  color: white
+  text-align: center
+  font-size: 1.3rem
+  text-transform: uppercase
+  height: 4rem
+  padding: 6px
+  z-index: 0
+  p
+    margin: auto
+    width: 50%
+.accordion-icon
+  width: 3rem
+  float: left
+  z-index: 1
+.float-right
+  float: right
+
+//brand-presentation
+#brand-presentation
+  font-size: large
+  .about-us
+    margin: 4em 0
+    .card-panel
+      font-size: 1.3vw
+    #margin-img
+      margin-top: 50px
+    #margin-p
+      margin-top: 20px
+
+//contact block
+#form-block
+  width: 88%
+  margin: 0 auto
+  .block-title
+    p
+      font-weight: bold
+      font-size: 1.3rem
+      padding-left: 7em
+      padding-right: 7em
+  form
+    margin-top: 2em
+  .radio-buttons
+    margin-bottom: 2em
+    #radio-button1
+      text-align: right
+  .input-changes
+    input, textarea
+      border-bottom: 1px solid #00939a
+      height: 3rem

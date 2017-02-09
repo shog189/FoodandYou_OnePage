@@ -13,4 +13,9 @@
 !var/sessions/.gitkeep
 !var/SymfonyRequirements.php
 /vendor/
+/node_modules
 /web/bundles/
+/web/vendors/components
+web/dev/sass/img/.DS_Store
+npm-debug.log
+
