@@ -1,16 +1,19 @@
-{% extends 'layout.html.twig' %}
+{% extends 'base.html.twig' %}
 
-{% block content %}
+{% block body %}
 
-    <div id="404-error">
+    <div class="error" id="404-error">
 
-        <h1>Oh ba dis donc! Il semblerait que cette page n'existe plus ou pas du tout !</h1>
+        <h1>Oh ba dis donc ! Il semblerait que cette page n'existe plus ou pas du tout !</h1>
+
+        {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+        {% endif %}
 
         <p>Notre brigade de développeurs foofoo s'affaire à la refonte de notre site, alors soyez prêt à en prendre plein les yeux!</p>
 
-        <p>En attendant, découvrez notre nouveau concept sur notre page éphémère</p>
+        <p>En attendant, découvrez notre nouveau concept sur notre page éphémère...</p>
 
-        <a href="{{ path('app_index') }}" class="waves-effect waves-light btn-large">Page D'Accueil</a>
+        <a href="{{ path('fy_valentine_homepage') }}" class="waves-effect waves-light btn-large">Page D'Accueil</a>
 
     </div>
 
