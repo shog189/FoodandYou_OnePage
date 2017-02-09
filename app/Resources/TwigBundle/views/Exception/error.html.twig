@@ -1,0 +1,27 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+    <div id="error-fr">
+        <h1>Oops! Une erreur est survenue</h1>
+        <h2>Le serveur a retourné un(e) "{{ status_text }} {{ status_code }}".</h2>
+
+        <div>
+            Un dysfonctionnement est apparu. N'hésitez pas à nous laisser un message sur notre formulaire temporaire pour nous informer
+            de ce que vous faisiez lorsque l'erreur est survenue. Nous tâcherons alors de résoudre le problème dès que possible.
+            En nous excusant pour le dérangement.
+    </div>
+    </div>
+
+    <hr>
+
+    <div id="error-en">
+        <h1>Oops! An Error Occurred</h1>
+        <h2>The server returned a "{{ status_code }} {{ status_text }}".</h2>
+
+        <div>
+            Something is broken. Please e-mail us at [email] and let us know
+            what you were doing when this error occurred. We will fix it as soon
+            as possible. Sorry for any inconvenience caused.
+        </div>
+    </div>
+{% endblock %}
