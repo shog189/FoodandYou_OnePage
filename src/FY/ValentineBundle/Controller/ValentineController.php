@@ -29,5 +29,9 @@ class ValentineController extends Controller
         ));
     }
 
+    public function mentionAction()
+    {
+        return $this->render('cgv.html.twig');
+    }
 
 }

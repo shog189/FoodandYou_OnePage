@@ -14,7 +14,8 @@ var paths = {
     ],
     sass: [
         'web/dev/sass/*',
-        'web/dev/sass/**/*'
+        'web/dev/sass/modules/*',
+        'web/dev/sass/views/*'
     ],
     dest: {
         js: 'web/assets/js',
@@ -24,10 +25,12 @@ var paths = {
     },
     vendorJs: [
         'web/vendors/components/jquery/dist/jquery.min.js',
-        'web/vendors/components/materialize/dist/js/materialize.min.js'
+        'web/vendors/components/materialize/dist/js/materialize.min.js',
+        'web/vendors/components/lity/dist/lity.min.js'
     ],
     vendorCss: [
-        'web/vendors/components/materialize/dist/css/materialize.min.css'
+        'web/vendors/components/materialize/dist/css/materialize.min.css',
+        'web/vendors/components/lity/dist/lity.min.css'
     ],
     font: [
         'web/vendors/components/materialize/fonts/**/*'
