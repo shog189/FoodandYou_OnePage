@@ -1,3 +1,8 @@
 fy_valentine_homepage:
     path:     /
     defaults: { _controller: FYValentineBundle:Valentine:index }
+
+cgv_page:
+    path:     /mentions-legales
+    defaults: { _controller: FYValentineBundle:Valentine:mention }
+
