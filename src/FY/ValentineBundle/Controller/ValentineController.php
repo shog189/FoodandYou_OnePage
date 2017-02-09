@@ -21,5 +21,9 @@ class ValentineController extends Controller
         return $this->render('index.html.twig');
     }
 
+    public function mentionAction()
+    {
+        return $this->render('cgv.html.twig');
+    }
 
 }

@@ -12,7 +12,11 @@ $(document).ready(function(){
     $(document).ready(function(){
         $('.collapsible').collapsible();
     });
+
+    $(document).on('click', '[data-lightbox]', lity);
+
 });
+
 
 
 
