@@ -3,6 +3,7 @@
       float: none
     .col
       width: 100%
+
     //header
     #menu-hidden
         display: none
@@ -25,6 +26,7 @@
         display: initial
         img
           width: 35px
+
     //top-page
     #top-page
       .row
@@ -33,6 +35,7 @@
         #button-bloc
           width: 100%
           margin-left: 0
+
     //new-concept
     #starting
       #text-newConcept
@@ -41,25 +44,32 @@
         img
           width: 100%
           margin: 1em 0
+
     //baptism
     #parallax-baptism
       background-image: none
       background-color: $header-color
       text-align: center
       font-size: large
+      #baptism
+        width: 85%
       .col
         float: none
       .card
         width: 100%
       #part-1
-        width: 85%
         margin: auto
+    .collapsible-header
+      p
+        font-size: 16px
 
     //gift-block
     #gift-block
       font-size: large
       .col
         float: none
+      img
+        width: 10rem
 
     //brand-presentation
     #parallax-presentation
@@ -79,11 +89,12 @@
           font-size: 8.5vw
         p
           padding: 0
-      .radio-buttons
-        #radio-button1
-          text-align: center
-        #radio-button2
-          text-align: center
+          margin: 0 -20px
+      #radio-button-block
+        #form_baptismChoice
+          label
+            margin: 10px 30px
+            float: left
 
     //footer
     .footer

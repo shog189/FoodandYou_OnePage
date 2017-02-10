@@ -47,8 +47,6 @@ p
 #starting
   padding-top: 2em
   padding-bottom: 2em
-  #image-position
-    margin-top: 10%
 
 //image size
 img
@@ -70,7 +68,6 @@ img
   .card
     color: black
     text-align: center
-    width: 60%
     margin: auto
 
 //accordion
@@ -115,14 +112,12 @@ img
 //brand-presentation
 #brand-presentation
   font-size: large
+  .col
+    padding: 0
   .about-us
     margin: 4em 0
     .card-panel
       font-size: 1.3vw
-    #margin-img
-      margin-top: 50px
-    #margin-p
-      margin-top: 20px
 
 //contact block
 #form-block
@@ -132,15 +127,32 @@ img
     p
       font-weight: bold
       font-size: 1.3rem
-      padding-left: 7em
-      padding-right: 7em
+      padding-left: 20px
+      padding-right: 20px
   form
     margin-top: 2em
-  .radio-buttons
+  #radio-button-block
     margin-bottom: 2em
-    #radio-button1
-      text-align: right
+    text-align: center
+    #form_baptismChoice
+      label
+        margin: 30px
+    .required:nth-child(1)
+      font-size: larger
+  .required:nth-child(1)
+    color: $font-color
+
   .input-changes
     input, textarea
       border-bottom: 1px solid #00939a
       height: 3rem
+
+@media(min-width: 990px) //only on desktop -- centering row items
+  #starting, #brand-presentation
+    .row
+      display: flex
+      align-items: center
+      justify-content: center
+  #brand-presentation
+    .col
+      margin: 0 25px
