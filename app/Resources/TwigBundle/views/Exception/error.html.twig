@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <div class="error">
+        <h1>Oops! Une erreur est survenue</h1>
+
+        {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+        {% endif %}
+
+        <p>
+            Il semblerait qu'une erreur technique vous empêche d'accéder à notre page :(
+            Pas de panique ! Si le problème vient de notre serveur, nous tâcherons de le résoudre au plus vite ;)
+        </p>
+    </div>
+
+{% endblock %}

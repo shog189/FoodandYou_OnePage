@@ -10,7 +10,7 @@ var paths = {
         'web/dev/js/*'
     ],
     img: [
-        'web/dev/img/*'
+        'web/dev/sass/img/*'
     ],
     sass: [
         'web/dev/sass/*',
